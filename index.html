@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Desenvolvedor - Target Sistemas</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <div class="container">
+        <h1>Teste Desenvolvedor - Target Sistemas</h1>
+        <h3>4084226 - Estágio Análise e Desenvolvimento - São Paulo</h3>
+        
+        <h2>1. Soma</h2>
+        <p>Observe o trecho de código abaixo:</p>
+        <pre>
+int INDICE = 13, SOMA = 0, K = 0;
+Enquanto K &lt; INDICE faça {
+    K = K + 1;
+    SOMA = SOMA + K;
+}
+Imprimir(SOMA);
+        </pre>
+        <p>Ao final do processamento, qual será o valor da variável SOMA?</p>
+        <button onclick="calcularSoma()">Calcular SOMA</button>
+        <p id="resultadoSoma" class="result"></p>
+        
+        <h2>2. Sequência de Fibonacci</h2>
+        <p>Informe um número para verificar se ele pertence à sequência de Fibonacci:</p>
+        <input type="number" id="numeroFibonacci" />
+        <button onclick="verificarFibonacci()">Verificar</button>
+        <p id="resultadoFibonacci" class="result"></p>
+        
+        <h2>3. Faturamento Diário</h2>
+        <p>Calcule o menor, maior valor de faturamento e os dias com faturamento acima da média:</p>
+        <button onclick="calcularFaturamento()">Calcular Faturamento</button>
+        <p id="resultadoFaturamento" class="result"></p>
+        
+        <h2>4. Percentual de Faturamento por Estado</h2>
+        <button onclick="calcularPercentual()">Calcular Percentual</button>
+        <p id="resultadoPercentual" class="result"></p>
+        
+        <h2>5. Inverter String</h2>
+        <p>Informe uma string para inverter:</p>
+        <input type="text" id="stringInput" />
+        <button onclick="inverterString()">Inverter</button>
+        <p id="resultadoString" class="result"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
